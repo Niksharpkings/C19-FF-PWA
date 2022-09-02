@@ -10,6 +10,12 @@ const config = {
     schedule: './assets/js/schedule.js',
     tickets: './assets/js/tickets.js'
   },
+  devServer: {
+    static: {                               
+      directory: path.join(__dirname, './'),  
+      watch: true
+    }
+  },
   output: {
     path: path.join(__dirname + "/dist"),
     filename: "[name].bundle.js"
